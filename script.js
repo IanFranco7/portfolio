@@ -7,11 +7,11 @@ const mobileItens = document.querySelectorAll('.mobileItem')
 
 window.sr = ScrollReveal();
 
-sr.reveal('.content', {duration: 1500})
-sr.reveal('.training-section', {duration: 1500, delay: 430})
+sr.reveal('.content', {duration: 1000})
+sr.reveal('.training-section', {duration: 1100, delay: 70})
 sr.reveal('.projects-section', {duration: 800})
-sr.reveal('.services-section', {duration: 1500, delay: 430})
-sr.reveal('.contact-section', {duration: 1500, delay: 430})
+sr.reveal('.services-section', {duration: 1000, delay: 70})
+sr.reveal('.contact-section', {duration: 1000, delay: 70})
 
 
 menu.addEventListener('click', ()=>{
