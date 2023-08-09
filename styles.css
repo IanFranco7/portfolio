@@ -388,12 +388,11 @@ header nav .list li a:hover::before{
     background: #000000da;
     top: 0;
     left: 0;
-    opacity: 0;
+    opacity: .5;
     transition: .3s ease-in-out;
 }
 
 .projects-section .card:hover .card-image::before{
-   opacity: 1;
    border: 1px solid yellow;
 }
 .projects-section .card .hidden{
