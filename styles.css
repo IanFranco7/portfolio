@@ -388,7 +388,7 @@ header nav .list li a:hover::before{
     background: #000000da;
     top: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     transition: .3s ease-in-out;
 }
 
