@@ -345,20 +345,13 @@ header nav .list li a:hover::before{
     font-weight: 600;
 }
 
-.projects-section .card .card-title p{
+/*.projects-section .card .card-title p{
     color: #ccc;
     font-size: 1rem;
-}
+}*/
 
 
-.projects-section .card:nth-child(n) .card-image{
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
+
 
 .projects-section .card:nth-child(1) .card-image{
     background: url('https://raw.githubusercontent.com/IanFranco7/Caixa-de-som/main/assets/home.png');
@@ -378,6 +371,14 @@ header nav .list li a:hover::before{
     background-position: center center;
 }
 
+.projects-section .card .card-image{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
 
 .projects-section .card .card-image::before{
     content: "";
@@ -391,8 +392,9 @@ header nav .list li a:hover::before{
     transition: .3s ease-in-out;
 }
 
-.projects-section .card .card-image:hover::before{
+.projects-section .card:hover .card-image::before{
     opacity: 1;
+    -webkit-opacity: 1;
 }
 .projects-section .card .hidden{
     width: 100%;
@@ -405,7 +407,13 @@ header nav .list li a:hover::before{
     justify-content: center;
     opacity: 1;
     transform: translateY(80%);
+    -webkit-transform: translateY(80%);
     transition: .4s ease-in-out;
+}
+
+.projects-section .card:hover .hidden{
+    -webkit-transform: translateY(80%);
+    transform: translateY(0);
 }
 
 .projects-section .card .hidden a{
@@ -424,9 +432,7 @@ header nav .list li a:hover::before{
     border: 1px solid #fff;
 }
 
-.projects-section .card-image:hover .hidden{
-    transform: translateY(0);
-}
+
 
 .projects-section .card .card-description p{
     color: #ccc;
